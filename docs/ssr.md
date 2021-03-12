@@ -1,2 +1,2 @@
-## NextJS
-<https://nextjs.org/docs>
+
+> [NextJS](https://nextjs.org/docs)
