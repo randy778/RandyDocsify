@@ -15,6 +15,10 @@
 
 > [eventLoop浅论](https://juejin.cn/post/6844903816249229320)
 
+> [JS 闭包经典使用场景和含闭包必刷题](https://juejin.cn/post/6937469222251560990)
+
+> [js 实现call和apply方法，超详细思路分析](https://www.cnblogs.com/echolun/p/12144344.html)
+
 ## 网络请求
 > [JS实现Ajax并发请求控制](https://juejin.cn/post/6916317088521027598)
 
