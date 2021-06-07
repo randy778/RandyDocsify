@@ -6,6 +6,8 @@
 
 > [分析React源码写出自己的react](https://pomb.us/build-your-own-react/)
 
+> [react的setState到底是同步还是异步](https://zhuanlan.zhihu.com/p/158725289)
+
 ## React性能
 > [性能分析及优化](https://zhuanlan.zhihu.com/p/120748634)
 
