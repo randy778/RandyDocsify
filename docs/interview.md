@@ -38,3 +38,6 @@
 
 ## 其他
 > [前端百问](https://zhuanlan.zhihu.com/p/111771610)
+
+## 简历编写工具
+> [简历编写工具](https://resume.mdedit.online/)

@@ -15,3 +15,9 @@
 > [eslint / prettier](https://zhuanlan.zhihu.com/p/80574300)
 
 > [service worker](https://zhuanlan.zhihu.com/p/115243059)
+
+> [github action](https://juejin.cn/post/6950799922178310152#heading-18)
+
+> [npm常用命令](https://juejin.cn/post/6950817077670182943)
+
+> [手写ECharts](https://juejin.cn/post/6950684708443258894)
