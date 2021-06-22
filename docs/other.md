@@ -21,3 +21,5 @@
 > [npm常用命令](https://juejin.cn/post/6950817077670182943)
 
 > [手写ECharts](https://juejin.cn/post/6950684708443258894)
+
+> [手写Promise.all和Promise.race](https://juejin.cn/post/6976028030770610213)
