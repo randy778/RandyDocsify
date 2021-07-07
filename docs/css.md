@@ -1,5 +1,6 @@
 ## CSS
 > [flex布局之美](https://juejin.cn/post/6866914148387651592)
+> [梳理伪类和伪元素](https://juejin.cn/post/6976646049456717838)
 
 ## Css-In-Js
 > [emotion](https://emotion.sh/docs/introduction)

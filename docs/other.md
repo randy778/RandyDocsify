@@ -23,3 +23,11 @@
 > [手写ECharts](https://juejin.cn/post/6950684708443258894)
 
 > [手写Promise.all和Promise.race](https://juejin.cn/post/6976028030770610213)
+
+> [使用icon](https://juejin.cn/post/6844903517564436493)
+
+> [js常用设计模式](https://juejin.cn/user/632923402807534)
+
+> [google的新前端框架Lit]
+
+> [前端校验文件类型](https://juejin.cn/post/6971935704938971173)
