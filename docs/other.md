@@ -28,10 +28,11 @@
 
 > [js常用设计模式](https://juejin.cn/user/632923402807534)
 
-> [google的新前端框架Lit]
-
 > [前端校验文件类型](https://juejin.cn/post/6971935704938971173)
 
 > [垃圾回收机制](https://juejin.cn/post/6981588276356317214)
 
 > [为什么都说定时器 setTimeout 不能准时执行呢？](https://juejin.cn/post/6982081539249012766)
+
+--------------------------------------------------
+> [server component](https://juejin.cn/post/6921981110083665934#heading-0)
