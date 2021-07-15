@@ -6,3 +6,5 @@
 ## 更新日志
 > [官方更新日志](https://github.com/facebook/react/blob/master/CHANGELOG.md)
 
+> [server component](https://juejin.cn/post/6921981110083665934#heading-0)
+
