@@ -5,7 +5,7 @@
 ## Css-In-Js
 > [emotion - @emotion/css可以用；@emotion/react没弄明白如何用，CRA无法正常使用](https://emotion.sh/docs/introduction)
 
-> [tailWind](https://tailwindcss.com/docs/guides/create-react-app)
+> [tailWind - 提供了已经预置好的样式定义，通过taiwind特定的class名（h-30、animate-spin-slow、text-4xl等）去定义样式，提供通过配置（tailwind.config.js）修改预置样式的能力](https://www.tailwindcss.cn/)
 
 > [react css-in-js](https://juejin.cn/post/6935245880568053791)
 
