@@ -7,7 +7,7 @@
 
 > [tailWind - 提供了已经预置好的样式定义，通过taiwind特定的class名（h-30、animate-spin-slow、text-4xl等）去定义样式，提供通过配置（tailwind.config.js）修改预置样式的能力](https://www.tailwindcss.cn/)
 
-> [react css-in-js](https://juejin.cn/post/6935245880568053791)
+> [styled-component - 通过style方法定义组件的样式](https://styled-components.com/docs/basics)
 
 ## Demo
 > [一些css实现的骚气效果，以后网页开发可以借鉴](https://zhuanlan.zhihu.com/p/158672754)
