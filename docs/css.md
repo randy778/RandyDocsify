@@ -3,7 +3,7 @@
 > [6种清除浮动和BFC](https://juejin.cn/post/6982179919597928485)
 
 ## Css-In-Js
-> [emotion](https://emotion.sh/docs/introduction)
+> [emotion - @emotion/css可以用；@emotion/react没弄明白如何用，CRA无法正常使用](https://emotion.sh/docs/introduction)
 
 > [tailWind](https://tailwindcss.com/docs/guides/create-react-app)
 
