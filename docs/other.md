@@ -15,3 +15,7 @@
 > [前端校验文件类型](https://juejin.cn/post/6971935704938971173)
 
 > [垃圾回收机制](https://juejin.cn/post/6981588276356317214)
+
+> [自己搭建组件库 - 使用dumi搭建组件库文档并publish到npm和github page](https://juejin.cn/post/6904795653243994125)
+
+> [自己搭建组件库 - 使用create-react-library]
