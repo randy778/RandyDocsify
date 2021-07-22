@@ -11,3 +11,5 @@
 
 ## Demo
 > [一些css实现的骚气效果，以后网页开发可以借鉴](https://zhuanlan.zhihu.com/p/158672754)
+
+> [svg配合js代码实现字体书写动画](https://juejin.cn/post/6982807219783860260)
