@@ -151,3 +151,14 @@ await后总是跟一个promise，如果后面跟的不是promise，会用Promise
     } )();
 ```
 ### 页面卡顿可以使用devtool里面的performance和memory来对比查看heap内存情况，排查是否属于内存泄露
+### js中我们可以使用JSON.stringify搭配JSON.parse实现深拷贝，前提是需要拷贝的数组满足以下规则，否则会有问题
+```
+在序列化js对象时，所有函数和原型成员都会有意的在结果中省略。
+此外，值为undefined的任何属性也会被跳过。最终等到的就是所有实例属性均为有效JSON数据类型的表示。
+注意：如果日期格式使用JSON.stringify后会变成字符串,JSON.parse后也是字符串。
+```
+### qiankun框架的通信方案
+```
+第一种是qiankun自己提供的action通信，利用qiankun的initGloabalState方法注册一个MicroAppStateActions，然后在需要监听数据变化的地方通过onGlobalState注册监听者：简单的流程可以理解为主应用注册一个MicroAppStateActions并注册自己为监听者，子应用在props中获取到MicroAppStateActions并注册自己为监听者，主应用/子应用通过setGlobalState改变数据时，双方都可以触发监听事件；
+第二种是redux的方案，基本思路是：主应用创建redux store（包含reducer和action的定义），在需要使用store的时候通过定义shared实例来实现（实例包含使用state和更新state），加载子应用时通过props传递shared实例给子应用，子应用接到shared实例后，使用其中的方法来获取和更新state
+```
