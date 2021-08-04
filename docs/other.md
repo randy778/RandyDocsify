@@ -19,3 +19,7 @@
 > [自己搭建组件库 - 使用dumi搭建组件库文档并publish到npm和github page](https://juejin.cn/post/6904795653243994125)
 
 > [自己搭建组件库 - 使用create-react-library]
+
+> [自己搭建cli和模板代码](https://juejin.cn/post/6989885344749617166?from=main_page)
+
+> [npm私库搭建的三种方式：verdaccio、git、cnpm + mySQL](https://juejin.cn/post/6844904033354776590)
