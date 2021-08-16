@@ -162,3 +162,41 @@ await后总是跟一个promise，如果后面跟的不是promise，会用Promise
 第一种是qiankun自己提供的action通信，利用qiankun的initGloabalState方法注册一个MicroAppStateActions，然后在需要监听数据变化的地方通过onGlobalState注册监听者：简单的流程可以理解为主应用注册一个MicroAppStateActions并注册自己为监听者，子应用在props中获取到MicroAppStateActions并注册自己为监听者，主应用/子应用通过setGlobalState改变数据时，双方都可以触发监听事件；
 第二种是redux的方案，基本思路是：主应用创建redux store（包含reducer和action的定义），在需要使用store的时候通过定义shared实例来实现（实例包含使用state和更新state），加载子应用时通过props传递shared实例给子应用，子应用接到shared实例后，使用其中的方法来获取和更新state
 ```
+### 防抖就是执行一次函数之后，需要等待一段时间，在这段时间内再次触发，需要重置计时；而节流是执行一次函数后，需要冷却一段时间才会对下次触发做响应。
+```javascript
+    function debounce(fn,delay){
+        let timer = null //借助闭包
+        return function() {
+            if(timer){
+                clearTimeout(timer) //进入该分支语句，说明当前正在一个计时过程中，并且又触发了相同事件。所以要取消当前的计时，重新开始计时
+                timer = setTimeout(fn,delay) 
+            }else{
+                timer = setTimeout(fn,delay) // 进入该分支说明当前并没有在计时，那么就开始一个计时
+            }
+        }
+    }
+    function debounce(fn,delay){
+        let timer = null //借助闭包
+        return function() {
+            if(timer){
+                clearTimeout(timer) 
+            }
+            timer = setTimeout(fn,delay) // 简化写法
+        }
+    }
+```
+### JavaScript的任务分为微任务（Microtasks）和宏任务（task）
+```
+宏任务是主流，当js开始被执行的时候，就是开启一个宏任务，在宏任务中执行一条一条的指令；
+宏任务可以同时有多个，但会按顺序一个一个执行；
+每一个宏任务，后面都可以跟一个微任务队列，如果微任务队列中有指令或方法，那么就会执行；如果没有，则开始执行下一个宏任务，直到所有的宏任务执行完为止，微任务相当于宏任务的小尾巴；
+为什么有了宏任务，还会有微任务存在？因为宏任务太占用性能，当需要一些较早就准备好的方法，排在最后才执行的时候，又不想新增一个宏任务，那么就可以把这些方法，一个一个的放在微任务队列里面，在这个宏任务中的代码执行完后，就会执行微任务队列。
+而Promise是微任务，setTimeout是宏任务
+```
+### 普通函数和箭头函数的区别：
+```
+1、箭头函数不可作为构造函数，不能使用new
+2、箭头函数没有自己的this
+3、箭头函数没有arguments对象
+4、箭头函数没有原型对象
+```

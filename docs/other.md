@@ -23,3 +23,5 @@
 > [自己搭建cli和模板代码](https://juejin.cn/post/6989885344749617166?from=main_page)
 
 > [npm私库搭建的三种方式：verdaccio、git、cnpm + mySQL](https://juejin.cn/post/6844904033354776590)
+
+> [大文件分片上传插件源码分析](https://juejin.cn/post/6992508040113029134?from=main_page)
