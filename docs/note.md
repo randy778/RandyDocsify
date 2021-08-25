@@ -1,6 +1,7 @@
 ### webpack loader配置从右往左执行
 ### dom中quereySelector和getElementByID的区别：静态获取和动态获取
-### js事件循环规律可大致可以参考如下两套代码搞清楚：
+### js事件循环规律可大致可以参考如下两套代码搞清楚：（这篇文章写得非常详细，可以作为处理此类问题的参考https://juejin.cn/post/6997968693414084644）
+### return Promise.resolve()会生成2个微任务入列
 ```javascript
         function func1() {
             console.log('func1 start');
@@ -91,6 +92,7 @@ await后总是跟一个promise，如果后面跟的不是promise，会用Promise
 如果await表达式后跟一个fulfilled态的promise，会返回对应的值。
 如果await表达式后跟一个rejected态的promise，会抛出错误，可以用.catch()方法或try...catch块捕获。
 ```
+### await的方法同步执行，后面的代码会被作为一个微任务入队
 ### 一下代码了解async...await
 ```javascript
     const Err = async () => {
