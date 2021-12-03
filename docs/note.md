@@ -232,3 +232,126 @@ await后总是跟一个promise，如果后面跟的不是promise，会用Promise
     };
 ```
 ### 动态规划算法https://juejin.cn/post/7000909761336049671#heading-10
+
+### What is currying in JavaScript?
+```javascript
+    function multiply(a,b){
+        return a*b;
+    }
+
+    function currying(fn){
+        return function(a){
+            return function(b){
+                return fn(a,b);
+            }
+        }
+    }
+
+    var curriedMultiply = currying(multiply);
+
+    multiply(4, 3); // Returns 12
+
+    curriedMultiply(4)(3); // Also returns 12
+```
+### What is memoization?
+```javascript
+    function memoizedAddTo256(){
+        var cache = {};
+
+        return function(num){
+            if(num in cache){
+                console.log("cached value");
+                return cache[num]
+            }
+            else{
+                cache[num] = num + 256;
+                return cache[num];
+            }
+        }
+    }
+
+    var memoizedFunc = memoizedAddTo256();
+
+    memoizedFunc(20); // Normal return
+    memoizedFunc(20); // Cached return
+```
+### What are generator functions?
+```javascript
+    function* iteratorFunc() {
+        let count = 0;
+        for (let i = 0; i < 2; i++) {
+            count++;
+            yield i;
+        }
+        return count;
+    }
+
+    let iterator = iteratorFunc();
+    console.log(iterator.next()); // {value:0,done:false}
+    console.log(iterator.next()); // {value:1,done:false}
+    console.log(iterator.next()); // {value:2,done:true}
+```
+### since y is an object, it will be converted to ‘object Object’. 所以x[y]和x[z]是一样的，都是x['object object']
+```javascript
+    let x= {}, y = {name:"Ronny"},z = {name:"John"};
+
+    x[y] = {name:"Vivek"};
+    x[z] = {name:"Akki"};
+
+    console.log(x[y]);
+```
+### Guess the output of the following code: Output is NaN 
+```javascript
+    var x = 23;
+
+    (function(){
+        var x = 43;
+        (function random(){
+            x++;
+            console.log(x);
+            var x = 21;
+        })();
+    })();
+```
+```javascript
+    function random(){
+        var x; // x is hoisted
+        x++; // x is not a number since it is not initialized yet
+        console.log(x); // Outputs NaN
+        x = 21; // Initialization of x
+    }
+```
+### Write a function that performs binary search on a sorted array.
+```javascript
+    function binarySearch(arr,value,startPos,endPos){
+        if(startPos > endPos) return -1;
+
+        let middleIndex = Math.floor(startPos+endPos)/2;
+
+        if(arr[middleIndex] === value) return middleIndex;
+
+        else if(arr[middleIndex] > value){
+            return binarySearch(arr,value,startPos,middleIndex-1);
+        }
+        else{
+            return binarySearch(arr,value,middleIndex+1,endPos);
+        }
+    }   
+```
+### Implement a function that returns an updated array with r right rotations on an array of integers a .
+```javascript
+    function rotateRight(arr,rotations){
+        if(rotations == 0) return arr;
+        for(let i = 0; i < rotations;i++){
+            let element = arr.pop();
+            arr.unshift(element);
+        }
+
+        return arr;
+    }
+
+    rotateRight([2, 3, 4, 5, 7], 3); // Return [4,5,7,2,3]
+    rotateRight([44, 1, 22, 111], 5); // Returns [111,44,1,22]   
+```
+### js手写函数集合https://juejin.cn/post/7031322059414175774
+
