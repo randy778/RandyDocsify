@@ -355,3 +355,5 @@ await后总是跟一个promise，如果后面跟的不是promise，会用Promise
 ```
 ### js手写函数集合https://juejin.cn/post/7031322059414175774
 
+### git教程
+https://learngitbranching.js.org/?locale=zh_CN
